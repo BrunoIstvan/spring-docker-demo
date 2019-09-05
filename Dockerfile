@@ -17,4 +17,8 @@ ARG JAR_FILE=target/spring-docker-demo*.jar
 ADD ${JAR_FILE} spring-docker-demo*.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/spring-docker-demo*.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", \
+				   "-Dapp.name=hello-world-demo", \	
+                   "-jar","/spring-docker-demo*.jar"]
+
+
