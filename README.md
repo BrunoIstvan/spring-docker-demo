@@ -9,3 +9,6 @@ docker build -t spring-docker-demo .
 docker run -p 5000:8080 spring-docker-demo
 ```
 
+Variáveis de ambiente AWS:
+
+[AWS Environment](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
